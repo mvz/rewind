@@ -13,7 +13,7 @@ function last_commit {
 function number_of_commits {
   git_history | wc -l
 }
- 
+
 function legible_output {
   # $2:   filename
   # $1:   lines of code
@@ -59,4 +59,3 @@ function create_csv {
 cd $1
 create_csv ${@:2:$#}
 cd -
-
